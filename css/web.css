@@ -1,6 +1,6 @@
 .background{
     background-repeat: no-repeat;
-    background-image: url('C:/Users/Brainik/Desktop/Cloud Project/web/assets/image.png');
+    background-image: url('./assets/image.png');
     background-size: cover; /* Масштабирует изображение, чтобы оно заполнило весь блок */
     
 }
