@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="css\web.css">
+    <link  rel="stylesheet" href="css\files.css">
+    <link  rel="stylesheet" href="css\download.css">
+</head>
+<body class="background">
+    <div class="container">
+        <div class="centered-div">
+            <!-- Кнопка загрузки -->
+            <button class="upload-button" onclick="document.getElementById('fileInput').click()">Загрузить файл</button>
+            <!-- Кнопка скачивания выбранных файлов -->
+            <button class="download-selected-button" onclick="downloadSelectedFiles()">Скачать выбранные файлы</button>
+            <!-- Скрытый input для выбора файла -->
+            <input type="file" id="fileInput" class="hidden-input" onchange="handleFileUpload(event)" />
+            <!-- Сетка файлов -->
+            <div class="file-grid" id="fileGrid">
+                <p>Загрузка...</p>
+            </div>
+        </div>
+    </div>
+    <script src="C:\Users\Brainik\Desktop\Cloud Project\web\js\but.js"></script>
+</body>
+</html>
