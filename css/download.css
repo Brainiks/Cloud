@@ -1,0 +1,22 @@
+/* Чекбокс */
+.file-checkbox {
+    position: relative;
+    left: 60px;
+}
+
+/* Кнопка скачивания */
+.download-selected-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-selected-button:hover {
+    background-color: #218838;
+}
+

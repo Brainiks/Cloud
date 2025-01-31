@@ -1,0 +1,52 @@
+.background{
+    background-repeat: no-repeat;
+    background-image: url('C:/Users/Brainik/Desktop/Cloud Project/web/assets/image.png');
+    background-size: cover; /* Масштабирует изображение, чтобы оно заполнило весь блок */
+    
+}
+
+.bord{
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;    /* Центрирование по вертикали */
+    border: 10px black;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;    /* Центрирование по вертикали */
+    height: 100vh;          /* Высота контейнера на весь экран */
+}
+.centered-div {
+    background-color: rgb(255, 255, 255);
+    width: 1300px;
+    height: 700px;
+    border-radius: 60px;
+    border: 2px solid black; 
+}
+.upload-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #007bff;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
+
+/* Скрываем стандартный input[type="file"] */
+.hidden-input {
+    display: none;
+}

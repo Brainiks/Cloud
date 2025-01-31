@@ -1,0 +1,60 @@
+/* Стили для кнопки */
+.upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
+
+/* Скрытый input для выбора файла */
+.hidden-input {
+    display: none;
+}
+
+/* Стили для списка файлов */
+.file-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.file-item {
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+}
+
+.file-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.file-item i {
+    font-size: 50px;
+    color: #007bff;
+}
+
+.file-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
