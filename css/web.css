@@ -1,6 +1,6 @@
 .background{
     background-repeat: no-repeat;
-    background-image: url('https://github.com/Brainiks/Cloud/blob/7dcfc4a56bca77e7d77c59d8afe561709e4b4762/assets/image.png');
+    background-image: url('https://github.com/Brainiks/Cloud/assets/image.png');
     background-size: cover; /* Масштабирует изображение, чтобы оно заполнило весь блок */
     
 }
