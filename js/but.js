@@ -13,7 +13,7 @@ async function handleFileUpload(event) {
 
   try {
       // Отправляем файл на сервер
-      const response = await fetch('http://localhost:8000/upload/', {
+      const response = await fetch('http://37.1.9.203:8000/upload/', {
           method: 'POST',
           body: formData,
       });
@@ -35,7 +35,7 @@ async function handleFileUpload(event) {
 // Функция для загрузки списка файлов с сервера
 async function loadFiles() {
     try {
-        const response = await fetch('http://localhost:8000/files/');
+        const response = await fetch('http://37.1.9.203:8000/files/');
         if (response.ok) {
             const data = await response.json();
             const fileGridDiv = document.getElementById('fileGrid');
@@ -56,7 +56,7 @@ async function loadFiles() {
                     if (isImage) {
                         // Если это изображение, показываем превью
                         fileItem.innerHTML += `
-                            <img src="http://localhost:8000/file/${file.filename}" alt="${file.filename}">
+                            <img src="http://37.1.9.203:8000/file/${file.filename}" alt="${file.filename}">
                             <p>${file.filename}</p>
                         `;
                     } else {
@@ -90,7 +90,7 @@ async function downloadSelectedFiles() {
     for (const checkbox of checkboxes) {
         const filename = checkbox.getAttribute('data-filename');
         const link = document.createElement('a');
-        link.href = `http://localhost:8000/file/${filename}`;
+        link.href = `http://37.1.9.203:8000/file/${filename}`;
         link.download = filename;
         link.click();
 
